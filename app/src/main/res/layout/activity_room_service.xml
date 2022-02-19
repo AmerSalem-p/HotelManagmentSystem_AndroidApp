@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".roomService">
+
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/roomservice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="#855DCC"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp">
+
+        <Button
+            android:id="@+id/breakfast"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="btn_breakfast"
+            android:background="#90000000"
+            android:backgroundTint="#E91E63"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Breakfast"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <Button
+
+            android:id="@+id/lunch"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="btn_lunch"
+            android:background="#90000000"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Lunch"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dinner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="btn_dinner"
+            android:background="#90000000"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Dinner"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="444dp" />
+
+        <Button
+            android:id="@+id/drinks"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:onClick="btn_drinks"
+            android:background="#90000000"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Drinks"
+            tools:layout_editor_absoluteX="253dp"
+            tools:layout_editor_absoluteY="444dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</FrameLayout>

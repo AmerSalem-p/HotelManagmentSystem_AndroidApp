@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hotelsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HotelSystem"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ReservationsReceptionist"
+            android:exported="true" />
+        <activity
+            android:name=".Services"
+            android:exported="true" />
+        <activity
+            android:name=".ManageServices"
+            android:exported="true" />
+        <activity
+            android:name=".CheckInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CheckActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditRoomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity_room_receptionist"
+            android:exported="true" />
+        <activity
+            android:name=".reserveRoom"
+            android:exported="true" />
+        <activity
+            android:name=".moreInfo"
+            android:exported="true" />
+        <activity
+            android:name=".roomController1"
+            android:exported="true" />
+        <activity
+            android:name=".roomController"
+            android:exported="true" />
+        <activity
+            android:name=".serviceView"
+            android:exported="true" />
+        <activity
+            android:name=".roomService"
+            android:exported="true" />
+        <activity
+            android:name=".orders"
+            android:exported="true" />
+        <activity
+            android:name=".reservations"
+            android:exported="true" />
+        <activity
+            android:name=".changeInfo"
+            android:exported="true" />
+        <activity
+            android:name=".requestRoomService"
+            android:exported="true" />
+        <activity
+            android:name=".regestration"
+            android:exported="true" />
+        <activity
+            android:name=".weather"
+            android:exported="true" />
+        <activity
+            android:name=".addNewCustommer"
+            android:exported="true" />
+        <activity
+            android:name=".removeCustomer"
+            android:exported="true" />
+        <activity
+            android:name=".customerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".customerController"
+            android:exported="true" />
+        <activity
+            android:name=".MangeRoomStatus"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@layout/activity_main" />
+
+        <activity
+            android:name=".receptionFunctions"
+            android:exported="true" />
+        <activity
+            android:name=".customerFunctions"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

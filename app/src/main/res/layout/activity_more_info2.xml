@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".moreInfo">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        android:adjustViewBounds="true" />
+
+    <ListView
+        android:id="@+id/roomInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:dividerHeight="15.0sp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/reserveRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#5EA1D6"
+        android:text="Edit Room Information"
+        android:onClick="btn_onClick_reserveRoom"
+        />
+
+</LinearLayout>

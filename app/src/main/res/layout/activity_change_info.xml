@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changeInfo"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/edt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Update Profile Information"
+        android:textColor="#E91E63"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ID"
+        android:layout_margin="7dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_margin="7dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone"
+        android:layout_margin="7dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/edtGender"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="password"
+        android:layout_margin="7dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+
+        <Switch
+            android:id="@+id/edtSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Show"
+            android:textColor="#E91E63" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/edtButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E91E63"
+        android:text="Update Profile"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="650dp"
+        android:onClick="btn_changeInfo"
+        />
+
+
+
+</LinearLayout>

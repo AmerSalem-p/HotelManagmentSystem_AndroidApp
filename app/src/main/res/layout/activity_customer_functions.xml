@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customerFunctions">
+
+  <ImageView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:scaleType="fitXY"
+      app:srcCompat="@drawable/hotel"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="0dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        >
+
+      <Button
+          android:id="@+id/changeInfo"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="Change info"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          android:onClick="btn_changInfo"
+          app:backgroundTint="#340A80" />
+
+      <Button
+          android:id="@+id/ordersView"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="My orders"
+          android:onClick="btn_orders"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          app:backgroundTint="#821795" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp">
+
+      <Button
+          android:id="@+id/room"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="Room"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:onClick="btn_room"
+          app:backgroundTint="#F13B79" />
+
+      <Button
+          android:id="@+id/Reservation"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="Reservation"
+          android:textSize="16sp"
+          android:onClick="reservation_btn"
+          android:textStyle="bold|italic"
+          app:backgroundTint="#419544" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+
+        >
+
+      <Button
+          android:id="@+id/service"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="Room Service"
+          android:onClick="btn_roomService"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          app:backgroundTint="#DC3E0C" />
+
+      <Button
+          android:id="@+id/logout"
+          android:layout_width="170dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="LogOut"
+          android:textSize="16sp"
+          android:textStyle="bold|italic"
+          app:backgroundTint="#1E8EE6"
+          android:onClick="btn_logout"
+          />
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HotelSystem</string>
+    <string-array name="typeOfBeds">
+        <item>single beds</item>
+        <item>twin beds</item>
+    </string-array>
+</resources>

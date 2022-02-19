@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<ImageView
+
+    android:id="@+id/imageView3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/hotel"
+    android:scaleType="fitXY"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="887dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Coastal bay hotel"
+            android:textColor="#2196F3"
+            android:textSize="50dp"
+            android:textStyle="bold|italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:id="@+id/loginInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="UserID"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <EditText
+            android:id="@+id/userPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="355dp" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#00BCD4"
+            android:onClick="btn_sign_in"
+            android:padding="15dp"
+            android:paddingRight="20dp"
+            android:text="Sign In"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="488dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+
+                android:id="@+id/regestration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="btnmohamad"
+                android:padding="15dp"
+                android:paddingRight="10dp"
+                android:text="Sign UP"
+
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="488dp" />
+
+            <TextView
+
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/getweather"
+                android:textColor="@color/white"
+                android:onClick="btnGetWeatherOnClick"
+                android:padding="15dp"
+                android:paddingRight="20dp"
+                android:text="Get Weather"
+
+                tools:layout_editor_absoluteX="158dp"
+                tools:layout_editor_absoluteY="488dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

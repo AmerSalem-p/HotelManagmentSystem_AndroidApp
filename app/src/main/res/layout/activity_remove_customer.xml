@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gg"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="887dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="DELEATE CUSTOMERS BY ID"
+            android:textColor="#1EE9AF"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="ENTER CUSTOMERS ID"
+            android:textColor="#CBE91E"
+            android:textSize="20dp"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/customerid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="#00BCD4"
+            android:onClick="RemoveCustomerOnCLick"
+            android:padding="15dp"
+            android:paddingRight="20dp"
+            android:text="Remove"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="158dp"
+            tools:layout_editor_absoluteY="488dp"
+
+            />
+
+
+    </LinearLayout>
+</FrameLayout>
