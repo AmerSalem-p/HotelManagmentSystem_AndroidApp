@@ -114,6 +114,15 @@ public class ReservationAdapter extends RecyclerView.Adapter<ReservationAdapter.
                 Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                customerName.remove(position);
+                roomNumber.remove(position);
+                reservationId.remove(position);
+                checkedInDate.remove(position);
+                checkedOutDate.remove(position);
+                leaveDate.remove(position);
+                reservationDate.remove(position);
+
+                notifyDataSetChanged();
 
             }
         }, new Response.ErrorListener() {

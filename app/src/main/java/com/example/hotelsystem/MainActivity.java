@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Toast.makeText(getApplicationContext(), userid.getText().toString(), Toast.LENGTH_SHORT).show();
             String url = "http://10.0.2.2/hotel-system/userLogin.php?id=" + userid.getText() + "&pass=" + userpass.getText();
             JsonArrayRequest jsonObjectRequest = new JsonArrayRequest
                     (Request.Method.GET, url,
@@ -104,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                     try{
 
                         JSONObject obj = response.getJSONObject(0);
-                        Toast.makeText(getApplicationContext(), obj.toString(), Toast.LENGTH_SHORT).show();
                         user userObject = new user();
                         userObject.setUserID(obj.getInt("userID"));
                         userObject.setName(obj.getString(("Name")));

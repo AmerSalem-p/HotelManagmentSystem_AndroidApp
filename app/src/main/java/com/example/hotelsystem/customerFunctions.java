@@ -44,7 +44,6 @@ public class customerFunctions extends AppCompatActivity {
 
         Intent intent = new Intent(customerFunctions.this, roomController.class);
         intent.putExtra("userObject",obj);
-        Toast.makeText(this.getApplicationContext(), obj.toString(), Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }
 

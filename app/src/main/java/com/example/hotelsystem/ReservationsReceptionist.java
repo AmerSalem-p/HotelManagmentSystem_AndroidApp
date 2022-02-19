@@ -69,7 +69,6 @@ public class ReservationsReceptionist extends AppCompatActivity {
                         for (int i = 0; i < response.length(); i++) {
                             try {
                                 JSONObject obj = response.getJSONObject(i);
-                                Toast.makeText(getApplicationContext(), obj.toString(), Toast.LENGTH_SHORT).show();
                                 customerName.add(obj.getString("customerName"));
                                 roomNumber.add(obj.getInt("roomNumber"));
                                 reservationId.add(obj.getInt("reservationID"));
