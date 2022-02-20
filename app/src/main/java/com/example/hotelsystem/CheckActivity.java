@@ -90,7 +90,6 @@ public class CheckActivity extends AppCompatActivity {
                                 }
 
                                 String imagePath = "@drawable/"+obj.getString("image");
-                                Toast.makeText(getApplicationContext(),imagePath,Toast.LENGTH_SHORT).show();
                                 int imageResource = getResources().getIdentifier(imagePath, null, getPackageName());
                                 imageIds[i] =imageResource;
 

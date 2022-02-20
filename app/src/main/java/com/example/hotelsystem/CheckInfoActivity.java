@@ -93,7 +93,7 @@ public class CheckInfoActivity extends AppCompatActivity {
                             @Override
                             public void onResponse(String response) {
                                 try {
-                                    Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_SHORT).show();
+
                                 } catch (Exception e) {
                                     e.printStackTrace();
                                 }
